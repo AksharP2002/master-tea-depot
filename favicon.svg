@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img">
+  <title>Master Tea Depot</title>
+  <rect width="32" height="32" rx="7" fill="#181310"/>
+  <rect x="1.15" y="1.15" width="29.7" height="29.7" rx="6.1" fill="none" stroke="#C99A3B" stroke-width="0.9"/>
+  <path d="M11.2 11.2c.55-1.05.55-1.7 0-2.7M16 10.4c.55-1.05.55-1.7 0-2.7M20.8 11.2c.55-1.05.55-1.7 0-2.7" fill="none" stroke="#E0B85B" stroke-width="1" stroke-linecap="round"/>
+  <path d="M8.6 14.6h10.2a5.1 5.1 0 0 1-10.2 0z" fill="#E0B85B"/>
+  <path d="M18.7 15.5c2.15.15 3.25 1.35 2.7 2.95-.6 1.6-2.75 1.7-3.35.25" fill="none" stroke="#E0B85B" stroke-width="1.05" stroke-linecap="round"/>
+  <path d="M8.1 22.15h11.4M9.7 24.15h8.2" fill="none" stroke="#C99A3B" stroke-width="0.95" stroke-linecap="round"/>
+</svg>
