@@ -17,6 +17,7 @@
   <title>Master Tea Depot · Assam Gold wholesale tea, Borsad since 1999</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./favicon.svg">
+  <link rel="preload" as="image" href="./assets/images/campaign/campaign-hero-pour.jpg" type="image/jpeg">
   <link rel="preload" as="image" href="./assets/images/assam-gold-lineup.webp" type="image/webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -147,6 +148,7 @@
       <nav id="primary-nav" class="primary-nav" aria-label="Primary">
         <a href="#heritage">Heritage</a>
         <a href="#assam-gold">Assam Gold</a>
+        <a href="#cup">The Cup</a>
         <a href="#wholesale">Wholesale</a>
         <a href="#team">The House</a>
         <a href="#visit">Visit</a>
@@ -192,13 +194,22 @@
             </li>
           </ul>
         </div>
-        <figure class="hero-frame">
-          <img src="./assets/images/assam-gold-lineup.webp" width="1600" height="1146" alt="Assam Gold lineup: printed pouch, 500 gram orange carry pack, and 1 kilogram red carry pack of Garden Fresh Pure CTC tea." fetchpriority="high">
-          <figcaption class="hero-caption">
-            <span>Assam Gold</span>
-            <span>Pouch · 500 g · 1 kg</span>
-          </figcaption>
-        </figure>
+        <div class="hero-visual">
+          <figure class="hero-campaign">
+            <img src="./assets/images/campaign/campaign-hero-pour.jpg" width="1280" height="720" alt="Chai poured from a copper kettle into a cup on a dark teakwood counter, with the orange 500 gram and red 1 kilogram Assam Gold packs beside the pour." fetchpriority="high">
+            <figcaption class="hero-caption">
+              <span>The pour</span>
+              <span>500 g · 1 kg</span>
+            </figcaption>
+          </figure>
+          <figure class="hero-frame hero-packs">
+            <img src="./assets/images/assam-gold-lineup.webp" width="1600" height="1146" alt="Assam Gold lineup: printed pouch, 500 gram orange carry pack, and 1 kilogram red carry pack of Garden Fresh Pure CTC tea.">
+            <figcaption class="hero-caption">
+              <span>As stocked</span>
+              <span>Pouch · 500 g · 1 kg</span>
+            </figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
@@ -262,6 +273,17 @@
           </ul>
         </div>
       </div>
+      <div class="wrap heritage-life reveal">
+        <figure class="photo-frame life-frame">
+          <img src="./assets/images/campaign/campaign-table-duo.jpg" width="1152" height="864" alt="A steaming chai cup held at a wooden table, with the orange 500 gram and red 1 kilogram Assam Gold packs beside it." loading="lazy">
+          <figcaption>500 g · 1 kg · beside the cup</figcaption>
+        </figure>
+        <div class="life-copy">
+          <p class="eyebrow">The daily cup</p>
+          <h3>Poured from the packs on the counter.</h3>
+          <p>Assam Gold is garden-fresh pure CTC. The orange 500 g carry pack and the red 1 kg carry pack stocked at Gandhi Ganj are the tea in that everyday cup — for retailers, hotels, and tea vendors buying from the Borsad depot since 1999.</p>
+        </div>
+      </div>
     </section>
 
     <section class="parchment section" id="assam-gold">
@@ -275,7 +297,12 @@
           <article class="product reveal">
             <div class="stage stage-light">
               <span class="stock">In stock</span>
-              <img src="./assets/images/assam-gold-500g.webp" width="1200" height="1800" alt="Assam Gold 500 gram orange carry pack labelled Garden Fresh Tea and Pure CTC Tea, from A Master Products." loading="lazy">
+              <img class="shot-pack" src="./assets/images/assam-gold-500g.webp" width="1200" height="1800" alt="Assam Gold 500 gram orange carry pack labelled Garden Fresh Tea and Pure CTC Tea, from A Master Products." loading="lazy">
+              <img class="shot-life shot-500" src="./assets/images/campaign/campaign-500g-studio.jpg" width="750" height="1000" alt="Studio portrait of a person holding the orange 500 gram Assam Gold pack, labelled Garden Fresh Tea and Pure CTC Tea." hidden>
+            </div>
+            <div class="view-toggle" role="group" aria-label="Photos of the Assam Gold 500 gram pack">
+              <button type="button" data-shot="pack" aria-pressed="true">The pack</button>
+              <button type="button" data-shot="life" aria-pressed="false">Studio</button>
             </div>
             <div class="product-body">
               <p class="product-kicker">Pure CTC tea</p>
@@ -291,7 +318,12 @@
           <article class="product reveal">
             <div class="stage stage-dark">
               <span class="stock">In stock</span>
-              <img src="./assets/images/assam-gold-1kg.webp" width="1200" height="1902" alt="Assam Gold 1 kilogram red carry pack labelled Garden Fresh Tea and Pure CTC Tea, from A Master Products." loading="lazy">
+              <img class="shot-pack" src="./assets/images/assam-gold-1kg.webp" width="1200" height="1902" alt="Assam Gold 1 kilogram red carry pack labelled Garden Fresh Tea and Pure CTC Tea, from A Master Products." loading="lazy">
+              <img class="shot-life shot-1kg" src="./assets/images/campaign/campaign-1kg-kitchen.jpg" width="750" height="1000" alt="A person in a warm kitchen holds the red 1 kilogram Assam Gold pack beside a brass kettle and a glass of chai." hidden>
+            </div>
+            <div class="view-toggle" role="group" aria-label="Photos of the Assam Gold 1 kilogram pack">
+              <button type="button" data-shot="pack" aria-pressed="true">The pack</button>
+              <button type="button" data-shot="life" aria-pressed="false">Kitchen</button>
             </div>
             <div class="product-body">
               <p class="product-kicker">Pure CTC tea</p>
@@ -331,10 +363,42 @@
       </div>
     </section>
 
+    <section class="dark editorial section" id="cup" aria-labelledby="cup-title">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow">03 — Cup &amp; counter</p>
+          <h2 id="cup-title">In every cup <em>&amp; counter.</em></h2>
+          <p class="lede">The orange 500 g pack and the red 1 kg pack are garden-fresh pure CTC from A Master Products, wholesale from the Gandhi Ganj counter in Borsad.</p>
+        </header>
+        <div class="editorial-grid">
+          <figure class="shot reveal">
+            <img class="shot-boutique" src="./assets/images/campaign/campaign-500g-boutique.jpg" width="1152" height="864" alt="A person in a sunlit tea shop holds the orange 500 gram Assam Gold pack, labelled Garden Fresh Tea and Pure CTC Tea." loading="lazy">
+            <figcaption>
+              <strong>500 g orange pack</strong>
+              <span>Carried for the day’s chai.</span>
+            </figcaption>
+          </figure>
+          <div class="editorial-side reveal">
+            <div class="editorial-note">
+              <p class="eyebrow">Wholesale &amp; the daily pour</p>
+              <p>Both packings leave the same depot. The smaller orange carry suits a counter that turns a few kettles a day. The red 1 kg pack is the reorder when the cup is already settled. What is poured is pure CTC.</p>
+            </div>
+            <figure class="shot">
+              <img class="shot-morning" src="./assets/images/campaign/campaign-1kg-morning.jpg" width="1152" height="864" alt="Morning chai in a glass beside a bowl of CTC tea granules and the red 1 kilogram Assam Gold pack." loading="lazy">
+              <figcaption>
+                <strong>1 kg red pack</strong>
+                <span>Morning chai beside CTC granules.</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="forest section" id="wholesale">
       <div class="wrap">
         <header class="section-head reveal">
-          <p class="eyebrow">03 — The desk</p>
+          <p class="eyebrow">04 — The desk</p>
           <h2>Ask for a quotation.</h2>
           <p class="lede">Choose a pack or describe a bulk lot. Add your name, business, and city. WhatsApp or email opens with the note ready to send. This page does not store the enquiry.</p>
         </header>
@@ -454,7 +518,7 @@ Please confirm availability and the wholesale rate.</pre>
     <section class="light section" id="team">
       <div class="wrap">
         <header class="section-head reveal">
-          <p class="eyebrow">04 — The house</p>
+          <p class="eyebrow">05 — The house</p>
           <h2>The people who keep the depot moving.</h2>
           <p class="lede">A family counter in Borsad, with accounts, foreign business, and marketing beside the tea.</p>
         </header>
@@ -509,7 +573,7 @@ Please confirm availability and the wholesale rate.</pre>
     <section class="parchment section" id="faq">
       <div class="wrap">
         <header class="section-head reveal">
-          <p class="eyebrow">05 — Questions</p>
+          <p class="eyebrow">06 — Questions</p>
           <h2>Before you order.</h2>
         </header>
         <div class="faq-list reveal">
@@ -576,7 +640,7 @@ Please confirm availability and the wholesale rate.</pre>
     <section class="dark section" id="visit">
       <div class="wrap visit-grid reveal">
         <div>
-          <p class="eyebrow">06 — Borsad</p>
+          <p class="eyebrow">07 — Borsad</p>
           <h2>The shop is on Gandhi Ganj.</h2>
           <p class="lede">Walk in during wholesale hours, or write to the desk before a large pickup so the counter can have the order ready.</p>
           <address class="address">
@@ -649,6 +713,7 @@ Please confirm availability and the wholesale rate.</pre>
         <ul class="footer-links">
           <li><a href="#heritage">Heritage</a></li>
           <li><a href="#assam-gold">Assam Gold</a></li>
+          <li><a href="#cup">Cup &amp; counter</a></li>
           <li><a href="#wholesale">Wholesale desk</a></li>
           <li><a href="#team">The house</a></li>
           <li><a href="#faq">Questions</a></li>

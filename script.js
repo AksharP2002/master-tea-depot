@@ -109,6 +109,27 @@
     });
   });
 
+  document.querySelectorAll(".view-toggle").forEach(function (group) {
+    var card = group.closest(".product");
+    var stage = card ? card.querySelector(".stage") : null;
+    if (!stage) return;
+
+    group.querySelectorAll("[data-shot]").forEach(function (button) {
+      button.addEventListener("click", function () {
+        var shot = button.getAttribute("data-shot");
+        group.querySelectorAll("[data-shot]").forEach(function (other) {
+          other.setAttribute("aria-pressed", other === button ? "true" : "false");
+        });
+        stage.classList.toggle("is-life", shot === "life");
+        stage.querySelectorAll("img").forEach(function (img) {
+          var show = img.classList.contains("shot-life") ? shot === "life" : shot === "pack";
+          if (show) img.removeAttribute("hidden");
+          else img.setAttribute("hidden", "");
+        });
+      });
+    });
+  });
+
   if (!form) return;
 
   var packInputs = form.querySelectorAll('input[name="pack"]');
